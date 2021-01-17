@@ -1,4 +1,4 @@
-package com.njxz.demo.domain.Vo;
+package com.example.demo.domain.Vo;
 
 public class StocktrackingVo implements Comparable<StocktrackingVo>{
 

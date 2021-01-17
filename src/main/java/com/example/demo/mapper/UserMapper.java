@@ -1,9 +1,11 @@
-package com.njxz.demo.mapper;
+package com.example.demo.mapper;
 
-import com.njxz.demo.domain.User;
-import com.njxz.demo.domain.UserExample;
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
+
+import com.example.demo.domain.User;
+import com.example.demo.domain.UserExample;
 
 public interface UserMapper {
     long countByExample(UserExample example);

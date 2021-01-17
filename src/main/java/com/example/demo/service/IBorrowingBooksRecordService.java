@@ -1,9 +1,9 @@
-package com.njxz.demo.service;
-
-import com.njxz.demo.domain.Vo.BorrowingBooksVo;
-import com.njxz.demo.utils.page.Page;
+package com.example.demo.service;
 
 import javax.servlet.http.HttpServletRequest;
+
+import com.example.demo.domain.Vo.BorrowingBooksVo;
+import com.example.demo.utils.page.Page;
 
 public interface IBorrowingBooksRecordService {
 

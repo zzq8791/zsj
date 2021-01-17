@@ -1,4 +1,4 @@
-package com.njxz.demo.utils.page;
+package com.example.demo.utils.page;
 
 import java.util.List;
 

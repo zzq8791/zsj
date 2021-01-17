@@ -1,26 +1,26 @@
-package com.njxz.demo.controller;
+package com.example.demo.controller;
 
 
 
-import com.njxz.demo.domain.Department;
-import com.njxz.demo.domain.User;
-import com.njxz.demo.domain.Vo.BookVo;
-import com.njxz.demo.domain.Vo.BorrowingBooksVo;
-import com.njxz.demo.service.IBookService;
-import com.njxz.demo.service.IBorrowingBooksRecordService;
-import com.njxz.demo.service.IUserService;
-import com.njxz.demo.utils.page.Page;
+import java.util.List;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.context.annotation.RequestScope;
 
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
-import java.util.List;
+import com.example.demo.domain.Department;
+import com.example.demo.domain.User;
+import com.example.demo.domain.Vo.BorrowingBooksVo;
+import com.example.demo.service.IBookService;
+import com.example.demo.service.IBorrowingBooksRecordService;
+import com.example.demo.service.IUserService;
+import com.example.demo.utils.page.Page;
 
 @Controller
 public class UserController {

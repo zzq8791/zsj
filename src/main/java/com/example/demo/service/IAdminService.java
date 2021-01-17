@@ -1,9 +1,9 @@
-package com.njxz.demo.service;
-
-import com.njxz.demo.domain.Book;
-import com.njxz.demo.domain.BookCategory;
+package com.example.demo.service;
 
 import java.util.List;
+
+import com.example.demo.domain.Book;
+import com.example.demo.domain.BookCategory;
 
 public interface IAdminService {
 

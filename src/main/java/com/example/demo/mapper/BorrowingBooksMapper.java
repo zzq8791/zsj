@@ -1,11 +1,11 @@
-package com.njxz.demo.mapper;
+package com.example.demo.mapper;
 
-import com.njxz.demo.domain.BorrowingBooks;
-import com.njxz.demo.domain.BorrowingBooksExample;
 import java.util.List;
-import java.util.Map;
 
 import org.apache.ibatis.annotations.Param;
+
+import com.example.demo.domain.BorrowingBooks;
+import com.example.demo.domain.BorrowingBooksExample;
 
 public interface BorrowingBooksMapper {
     long countByExample(BorrowingBooksExample example);

@@ -1,9 +1,11 @@
-package com.njxz.demo.mapper;
+package com.example.demo.mapper;
 
-import com.njxz.demo.domain.BookCategory;
-import com.njxz.demo.domain.BookCategoryExample;
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
+
+import com.example.demo.domain.BookCategory;
+import com.example.demo.domain.BookCategoryExample;
 
 public interface BookCategoryMapper {
     long countByExample(BookCategoryExample example);

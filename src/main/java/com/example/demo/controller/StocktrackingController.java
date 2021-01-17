@@ -1,9 +1,8 @@
-package com.njxz.demo.controller;
+package com.example.demo.controller;
 
 import java.io.InputStream;
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
@@ -13,7 +12,6 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
@@ -26,9 +24,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.njxz.demo.domain.Stocktracking;
-import com.njxz.demo.domain.Vo.StocktrackingVo;
-import com.njxz.demo.service.StocktrackingService;
+import com.example.demo.domain.Stocktracking;
+import com.example.demo.domain.Vo.StocktrackingVo;
+import com.example.demo.service.StocktrackingService;
 
 @Controller
 public class StocktrackingController {

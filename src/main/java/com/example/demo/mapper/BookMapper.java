@@ -1,9 +1,11 @@
-package com.njxz.demo.mapper;
+package com.example.demo.mapper;
 
-import com.njxz.demo.domain.Book;
-import com.njxz.demo.domain.BookExample;
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
+
+import com.example.demo.domain.Book;
+import com.example.demo.domain.BookExample;
 
 public interface BookMapper {
     long countByExample(BookExample example);

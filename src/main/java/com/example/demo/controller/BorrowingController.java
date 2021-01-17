@@ -1,14 +1,15 @@
-package com.njxz.demo.controller;
+package com.example.demo.controller;
 
-import com.njxz.demo.domain.Vo.BorrowingBooksVo;
-import com.njxz.demo.service.IBorrowingBooksRecordService;
-import com.njxz.demo.utils.page.Page;
+import javax.annotation.Resource;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import javax.annotation.Resource;
+import com.example.demo.domain.Vo.BorrowingBooksVo;
+import com.example.demo.service.IBorrowingBooksRecordService;
+import com.example.demo.utils.page.Page;
 
 @Controller
 public class BorrowingController {

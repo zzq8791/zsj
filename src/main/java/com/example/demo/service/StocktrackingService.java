@@ -1,10 +1,9 @@
-package com.njxz.demo.service;
+package com.example.demo.service;
 
 import java.util.Date;
 import java.util.List;
 
-
-import com.njxz.demo.domain.Stocktracking;
+import com.example.demo.domain.Stocktracking;
 
 public interface StocktrackingService {
 

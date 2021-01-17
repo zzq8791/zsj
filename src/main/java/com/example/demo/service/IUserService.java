@@ -1,13 +1,13 @@
-package com.njxz.demo.service;
+package com.example.demo.service;
 
-import com.njxz.demo.domain.BorrowingBooks;
-import com.njxz.demo.domain.Department;
-import com.njxz.demo.domain.User;
-import com.njxz.demo.domain.Vo.BorrowingBooksVo;
-import com.njxz.demo.utils.page.Page;
+import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.List;
+
+import com.example.demo.domain.Department;
+import com.example.demo.domain.User;
+import com.example.demo.domain.Vo.BorrowingBooksVo;
+import com.example.demo.utils.page.Page;
 
 public interface IUserService {
 

@@ -1,9 +1,9 @@
-package com.njxz.demo.service;
-
-import com.njxz.demo.domain.Vo.BookVo;
-import com.njxz.demo.utils.page.Page;
+package com.example.demo.service;
 
 import java.util.List;
+
+import com.example.demo.domain.Vo.BookVo;
+import com.example.demo.utils.page.Page;
 
 public interface IBookService {
 

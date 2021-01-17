@@ -1,13 +1,15 @@
-package com.njxz.demo.service.impl;
+package com.example.demo.service.impl;
 
-import com.njxz.demo.domain.BookCategory;
-import com.njxz.demo.mapper.BookCategoryMapper;
-import com.njxz.demo.service.IBookCategoryService;
-import com.njxz.demo.utils.page.Page;
-import org.springframework.stereotype.Service;
+import java.util.List;
 
 import javax.annotation.Resource;
-import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.example.demo.domain.BookCategory;
+import com.example.demo.mapper.BookCategoryMapper;
+import com.example.demo.service.IBookCategoryService;
+import com.example.demo.utils.page.Page;
 
 @Service
 public class BookCategoryServiceImpl implements IBookCategoryService {

@@ -1,4 +1,4 @@
-package com.njxz.demo.domain;
+package com.example.demo.domain;
 
 import java.util.ArrayList;
 import java.util.Date;

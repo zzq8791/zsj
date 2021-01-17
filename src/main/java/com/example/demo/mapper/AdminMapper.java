@@ -1,9 +1,11 @@
-package com.njxz.demo.mapper;
+package com.example.demo.mapper;
 
-import com.njxz.demo.domain.Admin;
-import com.njxz.demo.domain.AdminExample;
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
+
+import com.example.demo.domain.Admin;
+import com.example.demo.domain.AdminExample;
 
 public interface AdminMapper {
     long countByExample(AdminExample example);

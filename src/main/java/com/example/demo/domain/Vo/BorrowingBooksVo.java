@@ -1,9 +1,7 @@
-package com.njxz.demo.domain.Vo;
+package com.example.demo.domain.Vo;
 
-import com.njxz.demo.domain.Book;
-import com.njxz.demo.domain.User;
-
-import java.util.Date;
+import com.example.demo.domain.Book;
+import com.example.demo.domain.User;
 
 /**
  * @author yangxuechen

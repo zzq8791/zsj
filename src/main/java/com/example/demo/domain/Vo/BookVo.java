@@ -1,4 +1,4 @@
-package com.njxz.demo.domain.Vo;
+package com.example.demo.domain.Vo;
 
 public class BookVo {
     private Integer bookId;  //书籍id

@@ -1,9 +1,11 @@
-package com.njxz.demo.mapper;
+package com.example.demo.mapper;
 
-import com.njxz.demo.domain.Department;
-import com.njxz.demo.domain.DepartmentExample;
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
+
+import com.example.demo.domain.Department;
+import com.example.demo.domain.DepartmentExample;
 
 public interface DepartmentMapper {
     long countByExample(DepartmentExample example);

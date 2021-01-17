@@ -1,20 +1,22 @@
-package com.njxz.demo.controller;
+package com.example.demo.controller;
 
-import com.njxz.demo.domain.Book;
-import com.njxz.demo.domain.BookCategory;
-import com.njxz.demo.domain.Vo.BookVo;
-import com.njxz.demo.service.IAdminService;
-import com.njxz.demo.service.IBookCategoryService;
-import com.njxz.demo.service.IBookService;
-import com.njxz.demo.utils.page.Page;
+import java.util.List;
+
+import javax.annotation.Resource;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.annotation.Resource;
-import java.util.List;
+import com.example.demo.domain.Book;
+import com.example.demo.domain.BookCategory;
+import com.example.demo.domain.Vo.BookVo;
+import com.example.demo.service.IAdminService;
+import com.example.demo.service.IBookCategoryService;
+import com.example.demo.service.IBookService;
+import com.example.demo.utils.page.Page;
 
 @Controller
 public class BookController {

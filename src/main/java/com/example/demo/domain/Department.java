@@ -1,4 +1,4 @@
-package com.njxz.demo.domain;
+package com.example.demo.domain;
 
 public class Department {
     private Integer deptId;

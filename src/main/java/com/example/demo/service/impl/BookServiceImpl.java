@@ -1,19 +1,21 @@
-package com.njxz.demo.service.impl;
+package com.example.demo.service.impl;
 
-import com.njxz.demo.domain.Book;
-import com.njxz.demo.domain.BookExample;
-import com.njxz.demo.domain.BorrowingBooks;
-import com.njxz.demo.domain.BorrowingBooksExample;
-import com.njxz.demo.domain.Vo.BookVo;
-import com.njxz.demo.mapper.BookMapper;
-import com.njxz.demo.mapper.BorrowingBooksMapper;
-import com.njxz.demo.service.IBookService;
-import com.njxz.demo.utils.page.Page;
-import org.springframework.stereotype.Service;
-
-import javax.annotation.Resource;
 import java.util.LinkedList;
 import java.util.List;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Service;
+
+import com.example.demo.domain.Book;
+import com.example.demo.domain.BookExample;
+import com.example.demo.domain.BorrowingBooks;
+import com.example.demo.domain.BorrowingBooksExample;
+import com.example.demo.domain.Vo.BookVo;
+import com.example.demo.mapper.BookMapper;
+import com.example.demo.mapper.BorrowingBooksMapper;
+import com.example.demo.service.IBookService;
+import com.example.demo.utils.page.Page;
 
 @Service
 public class BookServiceImpl implements IBookService {

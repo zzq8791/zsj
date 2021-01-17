@@ -1,14 +1,20 @@
-package com.njxz.demo.service.impl;
+package com.example.demo.service.impl;
 
-import com.njxz.demo.domain.*;
-import com.njxz.demo.mapper.AdminMapper;
-import com.njxz.demo.mapper.BookCategoryMapper;
-import com.njxz.demo.mapper.BookMapper;
-import com.njxz.demo.service.IAdminService;
-import org.springframework.stereotype.Service;
+import java.util.List;
 
 import javax.annotation.Resource;
-import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.example.demo.domain.Admin;
+import com.example.demo.domain.AdminExample;
+import com.example.demo.domain.Book;
+import com.example.demo.domain.BookCategory;
+import com.example.demo.domain.BookCategoryExample;
+import com.example.demo.mapper.AdminMapper;
+import com.example.demo.mapper.BookCategoryMapper;
+import com.example.demo.mapper.BookMapper;
+import com.example.demo.service.IAdminService;
 
 @Service
 public class AdminServicreImpl implements IAdminService {

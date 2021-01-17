@@ -1,4 +1,4 @@
-package com.njxz.demo.service.impl;
+package com.example.demo.service.impl;
 
 import java.util.Date;
 import java.util.List;
@@ -7,9 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.njxz.demo.domain.Stocktracking;
-import com.njxz.demo.repository.StocktrackingRepo;
-import com.njxz.demo.service.StocktrackingService;
+import com.example.demo.domain.Stocktracking;
+import com.example.demo.repository.StocktrackingRepo;
+import com.example.demo.service.StocktrackingService;
 
 @Service
 public class StocktrackingServiceImpl implements StocktrackingService {

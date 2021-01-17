@@ -1,7 +1,7 @@
-package com.njxz.demo.service;
+package com.example.demo.service;
 
-import com.njxz.demo.domain.BookCategory;
-import com.njxz.demo.utils.page.Page;
+import com.example.demo.domain.BookCategory;
+import com.example.demo.utils.page.Page;
 
 public interface IBookCategoryService {
 

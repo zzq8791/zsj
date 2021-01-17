@@ -1,12 +1,8 @@
-package com.njxz.demo.controller;
+package com.example.demo.controller;
 
-import com.njxz.demo.domain.Book;
-import com.njxz.demo.domain.BookCategory;
-import com.njxz.demo.domain.User;
-import com.njxz.demo.domain.Vo.BookVo;
-import com.njxz.demo.domain.Vo.BorrowingBooksVo;
-import com.njxz.demo.service.*;
-import com.njxz.demo.utils.page.Page;
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,9 +10,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
-import java.util.List;
+import com.example.demo.domain.BookCategory;
+import com.example.demo.domain.User;
+import com.example.demo.domain.Vo.BookVo;
+import com.example.demo.service.IAdminService;
+import com.example.demo.service.IBookCategoryService;
+import com.example.demo.service.IUserService;
+import com.example.demo.utils.page.Page;
 
 @Controller
 public class AdminController {

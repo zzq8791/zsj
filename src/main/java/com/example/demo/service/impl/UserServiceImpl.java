@@ -1,22 +1,30 @@
-package com.njxz.demo.service.impl;
+package com.example.demo.service.impl;
 
-import com.njxz.demo.domain.*;
-import com.njxz.demo.domain.Vo.BorrowingBooksVo;
-import com.njxz.demo.mapper.BookMapper;
-import com.njxz.demo.mapper.BorrowingBooksMapper;
-import com.njxz.demo.mapper.DepartmentMapper;
-import com.njxz.demo.mapper.UserMapper;
-import com.njxz.demo.service.IUserService;
-import com.njxz.demo.utils.page.Page;
-import org.springframework.stereotype.Service;
-
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.stereotype.Service;
+
+import com.example.demo.domain.Book;
+import com.example.demo.domain.BorrowingBooks;
+import com.example.demo.domain.BorrowingBooksExample;
+import com.example.demo.domain.Department;
+import com.example.demo.domain.DepartmentExample;
+import com.example.demo.domain.User;
+import com.example.demo.domain.UserExample;
+import com.example.demo.domain.Vo.BorrowingBooksVo;
+import com.example.demo.mapper.BookMapper;
+import com.example.demo.mapper.BorrowingBooksMapper;
+import com.example.demo.mapper.DepartmentMapper;
+import com.example.demo.mapper.UserMapper;
+import com.example.demo.service.IUserService;
+import com.example.demo.utils.page.Page;
 
 @Service
 public class UserServiceImpl implements IUserService {
