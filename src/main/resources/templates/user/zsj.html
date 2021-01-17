@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>用户首页</title>
+    <script src="/scripts/jquery-3.3.1.min.js"></script>
+    <link href="/css/myUIstyle.css" rel="stylesheet" />
+    <script src="/scripts/base/base.js"></script><!--菜单布局 -->
+    <script src="/scripts/jquery.validate.min.js"></script>
+    <script src="/scripts/messages_zh.min.js"></script>
+    <script src="/scripts/user/stock.js"></script>
+</head>
+<body>
+
+<div class="top">
+    <div class="dropdown" style="float: right">
+        <button class="dropbtn"><b th:text="${session.user.getUserName()}"></b></button>
+        <div class="dropdown-content">
+           <!--  <a href="#">功能1</a>
+            <a href="#">功能2</a> -->
+            <a href="/userLogOut">退出</a>
+        </div>
+
+    </div>
+</div>
+
+   <div style="margin-left:18%;padding:1px 16px;">
+    <div style="float: left;width: 100%;height: 100%"><!--左半部分-->
+		<form enctype="multipart/form-data">
+            <input type="file" name="file" id="file">
+            <input name="query" type="button" value="导入excel">
+            <input name="export" type="button" value="导出excel">
+            <input id="status" type="text" name="status">
+            <input id="btn1" type="submit" value="查询" >
+              <!-- <input id="date" type="date" name="date"><br><br> -->
+        </form>
+    </div>
+    </div>
+    <div style="float: left;width: 100%;height: 100%"><!--右半部分-->
+       <!--  <h3 style="text-align: left">查询结果</h3> -->
+        <table>
+            <tr >
+                <th  width="8%">入库直升机号</th>
+                <th  width="8%">出库直升机号</th>
+                <th  width="3%">序号</th>
+                <th  width="3%">系统</th>
+                <th  width="3%">名称</th>
+                <th  width="3%">型号</th>
+                <th  width="4%">实物号</th>
+                <th  width="6%">履历本数量</th>
+                <th  width="8%">制造出厂日期</th>
+                <th  width="8%">最近装机日期</th>
+                <th  width="8%">总使用时间（次数）</th>
+                <th  width="8%">本次使用时间（次数）</th>
+                <th  width="4%">产品状态</th>
+                <th  width="8%">创建时间</th>
+                <th  width="8%">入库时间</th>
+                <th  width="6%">出库时间</th>
+                <th  width="10%">二维码</th>
+            </tr>
+            <tr th:each="vo:${stocktrackingVos}">
+               <td><label th:text="${vo.getCode()}"></label></td>
+                <td><label th:text="${vo.getCodeName()}"></label></td>
+                <td><label th:text="${vo.getCount()}"></label></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+<script type="text/javascript">
+    $('input[name="query"]').click(function(){
+        var fd = new FormData();
+         fd.append("sheetNo", 2); //上传的参数名 参数值 k-v键值对
+         fd.append("file", $("#file").get(0).files[0]);//上传的文件file
+         $.ajax({  
+              url:"/importExcel",  
+              type:"post",  
+              data:fd,  
+              cache: false,  
+              processData: false,  
+              contentType: false,  
+              success:function(data){ 
+                  console.log(data);
+                    alert("操作成功！");  
+              },  
+              error:function(e){  
+                  alert("网络错误，请重试！！");  
+               }  
+              });  
+    })
+
+</script>
+
+</html>
