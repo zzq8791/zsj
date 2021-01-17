@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.njxz.demo.mapper.BorrowingBooksMapper">
-  <resultMap id="BaseResultMap" type="com.njxz.demo.domain.BorrowingBooks">
+<mapper namespace="com.example.demo.mapper.BorrowingBooksMapper">
+  <resultMap id="BaseResultMap" type="com.example.demo.domain.BorrowingBooks">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="user_id" jdbcType="INTEGER" property="userId" />
     <result column="book_id" jdbcType="INTEGER" property="bookId" />
@@ -68,7 +68,7 @@
   <sql id="Base_Column_List">
     id, user_id, book_id, date
   </sql>
-  <select id="selectByExample" parameterType="com.njxz.demo.domain.BorrowingBooksExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.example.demo.domain.BorrowingBooksExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
@@ -93,19 +93,19 @@
     delete from borrowingbooks
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <delete id="deleteByExample" parameterType="com.njxz.demo.domain.BorrowingBooksExample">
+  <delete id="deleteByExample" parameterType="com.example.demo.domain.BorrowingBooksExample">
     delete from borrowingbooks
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.njxz.demo.domain.BorrowingBooks">
+  <insert id="insert" parameterType="com.example.demo.domain.BorrowingBooks">
     insert into borrowingbooks (id, user_id, book_id, 
       date)
     values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{bookId,jdbcType=INTEGER}, 
       #{date,jdbcType=DATE})
   </insert>
-  <insert id="insertSelective" parameterType="com.njxz.demo.domain.BorrowingBooks">
+  <insert id="insertSelective" parameterType="com.example.demo.domain.BorrowingBooks">
     insert into borrowingbooks
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -136,7 +136,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.njxz.demo.domain.BorrowingBooksExample" resultType="java.lang.Long">
+  <select id="countByExample" parameterType="com.example.demo.domain.BorrowingBooksExample" resultType="java.lang.Long">
     select count(*) from borrowingbooks
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
@@ -172,7 +172,7 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.njxz.demo.domain.BorrowingBooks">
+  <update id="updateByPrimaryKeySelective" parameterType="com.example.demo.domain.BorrowingBooks">
     update borrowingbooks
     <set>
       <if test="userId != null">
@@ -187,7 +187,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.njxz.demo.domain.BorrowingBooks">
+  <update id="updateByPrimaryKey" parameterType="com.example.demo.domain.BorrowingBooks">
     update borrowingbooks
     set user_id = #{userId,jdbcType=INTEGER},
       book_id = #{bookId,jdbcType=INTEGER},

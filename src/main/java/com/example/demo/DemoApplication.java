@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 
 @SpringBootApplication
-@MapperScan("com.njxz.demo.mapper")
+@MapperScan("com.example.demo.mapper")
 @ServletComponentScan
 public class DemoApplication {
 
